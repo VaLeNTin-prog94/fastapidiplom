@@ -42,8 +42,10 @@ alembic revision -m --autogenerate "Initial migration"
 
 ```
 
+
 ## Использованные templates
-![image](https://github.com/user-attachments/assets/909c7012-c39c-4fb1-8d63-39a0e336c167)
+![image](https://github.com/user-attachments/assets/632dbd78-4c75-4774-8570-66cc7c31c552)
+
 
 
 ## Зачем вы разработали этот проект?
