@@ -33,8 +33,20 @@ pip install sqlalchemy
 ```
 pip install alembic
 ```
-Миграции :
-```
- alembic revision -m --autogenerate "Initial migration"
-```
+
+## Использованные templates
+![image](https://github.com/user-attachments/assets/4e368fa3-a721-48c1-bdda-bc4d76dcf04d)
+
+
+
+
+
+## Зачем вы разработали этот проект?
+Для защиты дипломной работы
+
+## Команда проекта
+Валентин Михайлов
+
+## Источники
+- https://fastapi.tiangolo.com/ru/tutorial/
 
