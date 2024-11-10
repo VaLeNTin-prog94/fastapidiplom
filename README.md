@@ -44,7 +44,8 @@ alembic revision -m --autogenerate "Initial migration"
 
 
 ## Использованные templates
-![image](https://github.com/user-attachments/assets/632dbd78-4c75-4774-8570-66cc7c31c552)
+![image](https://github.com/user-attachments/assets/c57a370c-fe7d-4365-b6c2-1170b6dda5e2)
+
 
 
 
