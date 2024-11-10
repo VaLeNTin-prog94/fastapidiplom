@@ -21,10 +21,11 @@ pip install uvicorn
 ```
 pip install python-multipart  
 ```
-Запуск сервера
+
+Запуск сервера:
 ```
 python -m uvicorn main:app
-``
+```
 Для работы с базой данных:
 ```
 pip install sqlalchemy
