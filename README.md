@@ -42,19 +42,3 @@ alembic revision -m --autogenerate "Initial migration"
 
 ```
 
-
-## Использованные templates
-![image](https://github.com/user-attachments/assets/c57a370c-fe7d-4365-b6c2-1170b6dda5e2)
-
-
-
-
-## Зачем вы разработали этот проект?
-Для защиты дипломной работы
-
-## Команда проекта
-Валентин Михайлов
-
-## Источники
-- https://fastapi.tiangolo.com/ru/tutorial/
-
