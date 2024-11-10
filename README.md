@@ -8,3 +8,50 @@ Form для обработки форм и добавления записей �
 
 ## Архитектура проекта
 ![image](https://github.com/user-attachments/assets/a52fddc3-e1a6-477f-90ca-08b162d95c42)
+
+## Использование
+FastAPI — это фреймворк для создания лаконичных и довольно быстрых HTTP API-серверов со встроенными валидацией, сериализацией и асинхронностью. Стоит он на плечах двух других фреймворков. Работой с web в FastAPI занимается Starlette, за валидацию отвечает Pydantic.
+
+## Разработка
+Установите uvicorn для работы с сервером:
+```
+pip install uvicorn 
+```
+Для работы с файлами
+```
+pip install python-multipart  
+```
+Запуск сервера
+```
+python -m uvicorn main:app
+
+``
+Для работы с базой данных:
+```
+pip install sqlalchemy
+
+```
+Для работы с миграциями :
+```
+pip install alembic
+
+```
+Миграции :
+```
+alembic revision -m --autogenerate "Initial migration"
+
+```
+
+## Использованные templates
+![image](https://github.com/user-attachments/assets/909c7012-c39c-4fb1-8d63-39a0e336c167)
+
+
+## Зачем вы разработали этот проект?
+Для защиты дипломной работы
+
+## Команда проекта
+Валентин Михайлов
+
+## Источники
+- https://fastapi.tiangolo.com/ru/tutorial/
+
