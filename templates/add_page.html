@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, uset-scalable=no,initial-scale=1.0">
+    <meta HTTP-EQUIV="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        textarea {
+         background: #FFFFFF; /* Цвет фона */
+         border: 2px solid #a9c358; /* Параметры рамки */
+         padding: 10px; /* Поля */
+         width: 50%; /* Ширина */
+         height: 100px; /* Высота */
+         box-sizing: border-box; /* Алгоритм расчёта ширины */
+         font-size: 14px; /* Размер шрифта */
+        }
+    </style>
+</head>
+<body>
+<body>
+<h2>Добавление постов</h2>
+<form action="add_page" method="post">
+    <p>
+        title:<br>
+        <input name="title"/>
+    </p>
+    <p>
+        content :<br>
+    <p><textarea name="content"></textarea></p>
+    </p>
+    <p>
+    <p>
+        Опубликовано :<br>
+        <input type="checkbox" checked>
+    </p>
+    <p>
+        Выберите категорию:<br>
+        <select id="cat_d" name="category">
+            {% for c in category %}
+            <option value="category">{{c.name}}</option>
+            {% endfor %}
+        </select>
+    </p>
+    <button type="button" disabled>Опубликовать</button>
+</form>
+{% endblock %}

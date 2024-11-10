@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <link type="text/css" href="{{ url_for('static', path='/css/style.css') }}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<table class="table-page" border=0 cellpadding="0" cellspacing="0">
+    <tr>
+        <td valign=top>
+            {% block mainmenu %}
+            <div class="header">
+                <ul id="mainmenu" class="mainmenu">
+                    {% for m in menu %}
+                    <li class="last"><a href="{{ m.url_name }}">{{m.title}}</a></li>
+                    {% endfor %}
+                </ul>
+                <div class="clear"></div>
+            </div>
+            {% endblock mainmenu %}
+
+
+            <table class="table-content" border=0 cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top" class="left-chapters">
+                        <ul id="leftchapters">
+                            <li><a href="{{'/' }}">Все категории</a></li>
+                            {% for c in category %}
+                            <li><a href="{{c.category }}">{{c.name}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                    <td valign="top" class="content">
+                        <div class="content-text">
+                            {% block content %}
+                            {% endblock %}
+                        </div>
+</body>
+</html>

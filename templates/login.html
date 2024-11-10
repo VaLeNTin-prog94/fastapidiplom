@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, uset-scalable=no,initial-scale=1.0">
+    <meta HTTP-EQUIV="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<body>
+<h2>Вход в учетную запись</h2>
+<form action="registration" method="post">
+    <p>
+        Введите ваше имя:<br>
+        <input name="username"/>
+    </p>
+    <p>
+        Введите пароль:<br>
+        <input name="password"/>
+    </p>
+    <button type="button" disabled>Отправить</button>
+</form>
+
+{% endblock %}
