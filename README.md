@@ -24,21 +24,17 @@ pip install python-multipart
 Запуск сервера
 ```
 python -m uvicorn main:app
-
 ``
 Для работы с базой данных:
 ```
 pip install sqlalchemy
-
 ```
 Для работы с миграциями :
 ```
 pip install alembic
-
 ```
 Миграции :
 ```
-alembic revision -m --autogenerate "Initial migration"
-
+ alembic revision -m --autogenerate "Initial migration"
 ```
 
